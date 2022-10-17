@@ -1,0 +1,74 @@
+<style>
+    body {
+        background-image: url(../../images/background.jpg);
+    }
+    .info {
+        display: grid;
+        grid-template-columns: 40% 60%;
+    }
+    .avt_long {
+        width: 100%;
+        border-radius: 5px;
+        transition: 0.5s linear;
+    }
+    .avt_long:hover {
+        transform: scale(1.05);
+        border-radius: 50px;
+    }
+    .more_info {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 32px;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin: auto 0;
+        transition: 0.5s linear;
+        cursor: pointer;
+    }
+    .more_info div{
+        width: auto;
+        padding: 5px;
+        margin-bottom: 2rem;
+    }
+    .more_info div:hover {
+        transform: scale(1.03);
+        color:rgb(255, 0, 0);
+    }
+    .backhome{
+        position: absolute;
+        bottom: 15%;
+        right: 15%;
+        transition: 0.25s linear;
+    }
+    .backhome a{
+        color: #e80c81;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 32px;
+        border: 3px solid #e80c81;
+        border-radius: 5px;
+    }
+    .backhome:hover a{
+        color: #ffffff;
+        border: 3px solid #e80c81;
+        background-color: #e80c81;     
+    }
+    .backhome:hover {
+        bottom: 16%;
+    }
+</style>
+
+<body>
+    <div class="info">
+        <img class="avt_long" src="./image/avatar.jpg"></img>
+        <div class="more_info">
+            <div class="name">Đào Thiên Long</div>
+            <div class="id">20127554</div>
+            <div class="yob">07/03/2002</div>
+            <div class="email">stevencao135@gmail.com</div>
+            <div class="telenum">0373371702</div>
+        </div>
+    </div>
+    <div class="backhome">
+        <a href="../../default.html">BACK</a>
+    </div>
+</body>
